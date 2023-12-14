@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Life</title>
+    <style>
+      body {
+        background-color: mediumaquamarine;
+      }
+      #header {
+        font-size: 3rem;
+        text-align: center;
+        font-weight: bold;
+      }
+      #all {
+        background-color: gray;
+        width: 50%;
+        margin: auto;
+        font-size: 4em;
+      }
+      #about {
+        padding: 2%;
+        font-size: 1.7rem;
+      }
+      input {
+        padding: 2%;
+      }
+      #question {
+        padding: 20%;
+        margin-left: 20%;
+      }
+      button {
+        padding: 5%;
+        font-size: 2rem;
+        margin-left: 19%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      Questions about my life? <br />Please submit them here
+    </div>
+    <form>
+      <div id="all">
+        <div>
+          First Name:
+          <input id="firstName" required />
+        </div>
+
+        <div>
+          Last Name:
+          <input id="lastName" />
+        </div>
+        <div>
+          Question About:
+          <select id="about" required>
+            <option value="site">Website</option>
+            <option value="aiden">Aiden</option>
+            <option value="elly">Elly</option>
+            <option value="julia">Julia</option>
+            <option value="parents">Parents</option>
+            <option value="cats">Cats</option>
+          </select>
+        </div>
+
+        <div>
+          Email:
+          <input type="email" id="email" required />
+        </div>
+
+        <div>
+          Question:
+          <br />
+          <input id="question" />
+        </div>
+
+        <div id="buttons">
+          <button id="submit" type="submit">Submit</button>
+          <button id="reset" type="reset">Reset</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
